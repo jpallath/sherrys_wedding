@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron {
+  position: fixed;
+  top: 100px;
+  padding: 0 16%;
+  width: 70%;
+  background: black;
+}
+
+.details-greeter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 54.5vh;
+  z-index: -1;
+}
+
+.details-greeter p {
+  width: 80%;
+}
