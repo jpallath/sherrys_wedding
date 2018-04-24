@@ -4,10 +4,39 @@ import ring from "../images/ring.jpg";
 import "../styles/home.css";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      jumbotronStyle: {
+        padding: "0 25vw",
+        width: "50vw"
+      }
+    };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  handleScroll(event) {
+    let newStyle = {
+      width: "25vw",
+      padding: "0 40vw"
+    };
+    this.setState({
+      jumbotronStyle: newStyle
+    });
+  }
   render() {
+    let { jumbotronStyle } = this.state;
     return (
       <div className="home">
-        <img className="jumbotron" src={jumbotron} alt="greet" />
+        <img
+          className="jumbotron"
+          src={jumbotron}
+          alt="greet"
+          onScroll={this.handleScroll}
+          style={jumbotronStyle}
+        />
         <div className="details-greeter">
           <h1>A sweet ending to a new beginning </h1>
           <p>
