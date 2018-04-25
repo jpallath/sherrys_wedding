@@ -8,6 +8,7 @@ class Home extends Component {
     let imageOne = {
       backgroundImage: `url(${pinky})`
     };
+    console.log(pinky);
     let imageTwo = {
       backgroundImage: `url(${engagement})`
     };
