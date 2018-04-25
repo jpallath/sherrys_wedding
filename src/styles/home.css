@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  animation: fade-in 1s forwards;
 }
 
 .details-greeter {
@@ -25,9 +27,26 @@
   /* The image used */
   height: 500px;
   width: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: grayed 5s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grayed {
+  0% {
+  }
+  100% {
+    filter: grayscale(100%);
+  }
 }
