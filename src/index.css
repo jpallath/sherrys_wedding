@@ -7,7 +7,7 @@ body {
 /* Navigation */
 nav {
   z-index: 1000;
-  /* background: black; */
+  background: black;
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +36,7 @@ nav.hi {
 }
 #navbar {
   position: fixed;
+  background: black;
 }
 .hi,
 .bye {
@@ -52,7 +53,7 @@ nav.hi {
 
 .hi li a,
 .bye li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
