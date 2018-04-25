@@ -19,10 +19,21 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 54.5vh;
+  top: 47.5vh;
   z-index: -1;
 }
 
 .details-greeter p {
   width: 80%;
+}
+
+.parallax {
+  /* The image used */
+  height: 500px;
+  width: 100%;
+  filter: grayscale(100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import jumbotron from "../images/jumbotron.png";
-import ring from "../images/ring.jpg";
+import pinky from "../images/pinky.jpg";
+import engagement from "../images/engagement.jpg";
 import "../styles/home.css";
 
 class Home extends Component {
@@ -10,7 +11,8 @@ class Home extends Component {
       jumbotronStyle: {
         padding: "0 25vw",
         width: "50vw"
-      }
+      },
+      scroll: 0
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -19,15 +21,28 @@ class Home extends Component {
   }
   handleScroll(event) {
     let newStyle = {
-      width: "25vw",
-      padding: "0 40vw"
+      width: "10vw",
+      padding: "0 45vw"
     };
-    this.setState({
-      jumbotronStyle: newStyle
-    });
+    let defaultStyle = {
+      padding: "0 25vw",
+      width: "50vw"
+    };
+    if (window.scrollY > this.state.scroll) {
+      this.setState({ scroll: window.scrollY, jumbotronStyle: newStyle });
+    } else {
+      console.log("lesser");
+      this.setState({ scroll: window.scrollY, jumbotronStyle: defaultStyle });
+    }
   }
   render() {
     let { jumbotronStyle } = this.state;
+    let imageOne = {
+      backgroundImage: `url(${pinky})`
+    };
+    let imageTwo = {
+      backgroundImage: `url(${engagement})`
+    };
     return (
       <div className="home">
         <img
@@ -38,6 +53,7 @@ class Home extends Component {
           style={jumbotronStyle}
         />
         <div className="details-greeter">
+          <div className="parallax" style={imageOne} />
           <h1>A sweet ending to a new beginning </h1>
           <p>
             May 01, 2017 marks the date when the couple first started texting.
@@ -54,8 +70,8 @@ class Home extends Component {
             in love and was ready to lock her down and spend the rest of their
             lives together.
           </p>
-          <img src={ring} alt="another one" />
-          <h1>He proposed</h1>
+          <div className="parallax" style={imageTwo} />
+          <h1>He proposed!</h1>
         </div>
       </div>
     );
