@@ -20,32 +20,52 @@ nav {
   width: 100%;
   height: 100px;
   animation: 1s fadein 1s forwards;
-  top: -100px;
 }
 
-nav li a {
+.jumbotron {
+  position: fixed;
+  top: 0.05%;
+  /* padding: 0 25vw;
+  width: 50vw; */
+  background: black;
+  transition: all ease 1s;
+}
+
+nav.hi {
+  opacity: 1;
+}
+#navbar {
+  position: fixed;
+}
+.hi,
+.bye {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hi li,
+.bye li {
+  margin: 0 20px;
+}
+
+.hi li a,
+.bye li a {
+  color: black;
   text-decoration: none;
 }
 
-nav li:first-child {
-  margin-left: 10px;
+.inactive.jumbotron {
+  z-index: -1;
+  opacity: 0;
 }
 
-nav li:last-child {
-  margin-right: 10px;
+nav.bye {
+  opacity: 0;
 }
 
-nav a {
-  color: #ababab;
-}
-
-nav a:hover {
-  color: #efefef;
-}
-
-@keyframes fadein {
-  100% {
-    background: maroon;
-    transform: translateY(100px);
-  }
+.active.jumbotron {
+  z-index: 10;
+  opacity: 1;
 }

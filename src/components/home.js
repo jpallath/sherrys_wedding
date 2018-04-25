@@ -1,42 +1,10 @@
 import React, { Component } from "react";
-import jumbotron from "../images/jumbotron.png";
 import pinky from "../images/pinky.jpg";
 import engagement from "../images/engagement.jpg";
 import "../styles/home.css";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      jumbotronStyle: {
-        padding: "0 25vw",
-        width: "50vw"
-      },
-      scroll: 0
-    };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  handleScroll(event) {
-    let newStyle = {
-      width: "10vw",
-      padding: "0 45vw"
-    };
-    let defaultStyle = {
-      padding: "0 25vw",
-      width: "50vw"
-    };
-    if (window.scrollY > this.state.scroll) {
-      this.setState({ scroll: window.scrollY, jumbotronStyle: newStyle });
-    } else {
-      console.log("lesser");
-      this.setState({ scroll: window.scrollY, jumbotronStyle: defaultStyle });
-    }
-  }
   render() {
-    let { jumbotronStyle } = this.state;
     let imageOne = {
       backgroundImage: `url(${pinky})`
     };
@@ -45,30 +13,23 @@ class Home extends Component {
     };
     return (
       <div className="home">
-        <img
-          className="jumbotron"
-          src={jumbotron}
-          alt="greet"
-          onScroll={this.handleScroll}
-          style={jumbotronStyle}
-        />
         <div className="details-greeter">
           <div className="parallax" style={imageOne} />
-          <h1>A sweet ending to a new beginning </h1>
+          <h1>A SWEET ENDING TO A NEW BEGINNING </h1>
           <p>
-            May 01, 2017 marks the date when the couple first started texting.
-            Texting lead to Calls then Video Chats (the occasional SnapChat)
-            then finally the connection was strong enough for Jones to finally
-            take a flight out to Newark, New Jersey. Sherry made the 2 hour trip
-            from Philadelphia, Pennsylvania to pick up (not knowing at the time)
-            her future fiance. The 2 hour trip the couple finally talked side
-            face to side face and checking each other out sneakingly. that
-            weekend June 9 -11 2017 the couple was themselves for the first time
-            but still had the goosebumps every time the other looked at them.
-            From June each would be traveling from coast to coast.. July 4,
-            2017, we fell in love each other on a phone call. Jones fell deeply
-            in love and was ready to lock her down and spend the rest of their
-            lives together.
+            MAY 01, 2017 MARKS THE DATE WHEN THE COUPLE FIRST STARTED TEXTING.
+            TEXTING LEAD TO CALLS THEN VIDEO CHATS (THE OCCASIONAL SNAPCHAT)
+            THEN FINALLY THE CONNECTION WAS STRONG ENOUGH FOR JONES TO FINALLY
+            TAKE A FLIGHT OUT TO NEWARK, NEW JERSEY. SHERRY MADE THE 2 HOUR TRIP
+            FROM PHILADELPHIA, PENNSYLVANIA TO PICK UP (NOT KNOWING AT THE TIME)
+            HER FUTURE FIANCE. THE 2 HOUR TRIP THE COUPLE FINALLY TALKED SIDE
+            FACE TO SIDE FACE AND CHECKING EACH OTHER OUT SNEAKINGLY. THAT
+            WEEKEND JUNE 9 -11 2017 THE COUPLE WAS THEMSELVES FOR THE FIRST TIME
+            BUT STILL HAD THE GOOSEBUMPS EVERY TIME THE OTHER LOOKED AT THEM.
+            FROM JUNE EACH WOULD BE TRAVELING FROM COAST TO COAST.. JULY 4,
+            2017, WE FELL IN LOVE EACH OTHER ON A PHONE CALL. JONES FELL DEEPLY
+            IN LOVE AND WAS READY TO LOCK HER DOWN AND SPEND THE REST OF THEIR
+            LIVES TOGETHER.
           </p>
           <div className="parallax" style={imageTwo} />
           <h1>He proposed!</h1>
