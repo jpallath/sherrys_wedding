@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 10vh;
   z-index: -1;
   background: black;
   color: white;
@@ -23,7 +22,7 @@
 
 .parallax {
   /* The image used */
-  height: 500px;
+  height: 700px;
   width: 100%;
   filter: grayscale(0%);
   background-attachment: fixed;
@@ -31,7 +30,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation: grayed 5s forwards;
-  background-image: url("../images/ring.jpg");
+}
+
+.image-one {
+  background-image: url("../images/pinky.jpg");
+}
+
+.image-two {
+  background-image: url("../images/engagement.jpg");
+}
+.home-text {
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.home-text p {
+  margin: 0 auto;
 }
 
 @keyframes grayed {
@@ -39,5 +58,39 @@
   }
   100% {
     filter: grayscale(100%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .details-greeter {
+    top: 0;
+  }
+  .parallax {
+    background-size: 1024px 682px;
+    height: 70vh;
+  }
+  .home-text {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .details-greeter {
+    top: 0;
+  }
+  .parallax {
+    height: 70vh;
+  }
+  .image-one {
+    background-position: 70%;
+  }
+  .image-two {
+    background-position: 47%;
+  }
+  .home-text {
+    height: 30vh;
+    font-size: 50%;
+    line-height: 15px;
+    padding: 12% 0;
   }
 }

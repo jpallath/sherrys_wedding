@@ -6,10 +6,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      jumbotronStyle: {
-        padding: "0 10vw",
-        width: "80vw"
-      },
+      jumbotronStyle: "default",
       menuStyle: "inactive",
       scroll: 0
     };
@@ -31,14 +28,8 @@ class NavBar extends Component {
     });
   }
   handleScroll(event) {
-    let newStyle = {
-      width: "10vw",
-      padding: "0 45vw"
-    };
-    let defaultStyle = {
-      padding: "0 25vw",
-      width: "50vw"
-    };
+    let newStyle = "downscroll";
+    let defaultStyle = "upscroll";
     if (window.scrollY > this.state.scroll) {
       this.setState({ scroll: window.scrollY, jumbotronStyle: newStyle });
     } else {
@@ -48,7 +39,7 @@ class NavBar extends Component {
   render() {
     let { jumbotronStyle, menuStyle } = this.state;
     let notMenuStyle = "active" === menuStyle ? "inactive" : "active";
-    let jumbo = `${notMenuStyle} jumbotron`;
+    let jumbo = `${notMenuStyle} ${jumbotronStyle} jumbotron`;
     return (
       <nav
         onMouseOver={this.menuAppear}
@@ -84,7 +75,6 @@ class NavBar extends Component {
           src={jumbotron}
           alt="greet"
           onScroll={this.handleScroll}
-          style={jumbotronStyle}
         />
       </nav>
     );

@@ -78,3 +78,47 @@ nav.bye {
   z-index: 10;
   opacity: 1;
 }
+
+.downscroll.jumbotron {
+  width: 10vw;
+  padding: 0 45vw;
+}
+
+.upscroll.jumbotron {
+  width: 50vw;
+  padding: 0 25vw;
+}
+
+.default.jumbotron {
+  padding: 0 12.5vw;
+  width: 75vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .downscroll.jumbotron {
+    width: 30vw;
+    padding: 0 35vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .default.jumbotron {
+    width: 100vw;
+    padding: 18vh 0vw;
+  }
+  .downscroll.jumbotron {
+    width: 50vw;
+    padding: 0 25vw;
+  }
+  .upscroll.jumbotron {
+    width: 60vw;
+    padding: 0 20vw;
+  }
+  .hi li,
+  .bye li {
+    font-size: 10px;
+    margin: 0 1%;
+    padding: 4% 1%;
+    text-align: center;
+  }
+}
