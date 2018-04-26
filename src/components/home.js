@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="details-greeter">
           <div className="parallax image-one" />
           <div className="home-text">
-            <h1>A SWEET ENDING TO A NEW BEGINNING </h1>
+            <h1>#Jonesin4Sherry </h1>
             <p>
               MAY 01, 2017 MARKS THE DATE WHEN THE COUPLE FIRST STARTED TEXTING.
               TEXTING LEAD TO CALLS THEN VIDEO CHATS (THE OCCASIONAL SNAPCHAT)
