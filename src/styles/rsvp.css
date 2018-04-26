@@ -23,6 +23,11 @@
   align-items: center;
 }
 
+.sibling {
+  margin-top: 5px;
+  transition: all 0.5s ease-in;
+}
+
 form input {
   background: black;
   border-color: black;
@@ -40,6 +45,7 @@ input[type="submit"] {
   text-align: center;
   border-color: white;
   font-weight: bolder;
+  font-size: 1em;
 }
 
 input[type="text"]:focus {
@@ -47,6 +53,11 @@ input[type="text"]:focus {
   border-bottom-color: maroon;
   transition: all 0.5s ease-in;
 }
+
+input[type="text"]:focus + .sibling {
+  color: maroon;
+}
+
 input[type="text"]:active {
   outline: none;
   border-bottom-color: maroon;

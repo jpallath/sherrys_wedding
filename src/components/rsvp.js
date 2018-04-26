@@ -17,22 +17,28 @@ class RSVP extends Component {
             attending!
           </p>
           <p>
-            <label htmlFor="entry.1809360048">Name</label>
             <input type="text" name="entry.1809360048" />
+            <label className="sibling" htmlFor="entry.1809360048">
+              Name
+            </label>
           </p>
           <p>
-            <label htmlFor="entry.850359638">Email</label>
             <input type="text" name="entry.850359638" />
+            <label className="sibling" htmlFor="entry.850359638">
+              Email
+            </label>
           </p>
           <p>
-            <label htmlFor="entry.2037305380">
+            <input type="text" name="entry.2037305380" />
+            <label className="sibling" htmlFor="entry.2037305380">
               How many people are you bringing?
             </label>
-            <input type="text" name="entry.2037305380" />
           </p>
           <p>
-            <label htmlFor="entry.1155699208">Comments</label>
             <input type="text" name="entry.1155699208" />
+            <label className="sibling" htmlFor="entry.1155699208">
+              Comments
+            </label>
           </p>
           <input type="submit" value="See you soon" />
         </form>
