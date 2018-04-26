@@ -7,6 +7,7 @@ import Festivities from "./festivities";
 import Registry from "./registry";
 import Travel from "./travel";
 import Story from "./addtoourstory";
+import RSVP from "./rsvp";
 import NavBar from "./navbar";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
           <div>
             <NavBar />
             <Route exact path="/" component={Home} />
+            <Route exact path="/rsvp" component={RSVP} />
             <Route exact path="/gallery" component={Gallery} />
             <Route exact path="/bridalparty" component={BridalParty} />
             <Route exact path="/festivities" component={Festivities} />

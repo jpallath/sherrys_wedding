@@ -1,0 +1,59 @@
+.rsvp {
+  height: 150vh;
+  background: maroon;
+}
+.image-rsvp {
+  background-image: url("../images/rsvp.JPG");
+}
+
+.rsvp-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: maroon 3px solid;
+  background: black;
+  color: white;
+  padding: 5%;
+}
+
+.rsvp-form p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  background: black;
+  border-color: black;
+  color: maroon;
+  text-align: center;
+  border-bottom-color: white;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}
+
+input[type="submit"] {
+  background: black;
+  border-color: black;
+  color: maroon;
+  text-align: center;
+  border-color: white;
+  font-weight: bolder;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom-color: maroon;
+  transition: all 0.5s ease-in;
+}
+input[type="text"]:active {
+  outline: none;
+  border-bottom-color: maroon;
+  transition: all 0.5s ease-in;
+}
+@media screen and (max-width: 414px) {
+  .image-rsvp {
+    background-position: 28%;
+  }
+}

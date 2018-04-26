@@ -51,6 +51,9 @@ class NavBar extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/RSVP">RSVP</Link>
+          </li>
+          <li>
             <Link to="/story">Add to Our Story</Link>
           </li>
           <li>
