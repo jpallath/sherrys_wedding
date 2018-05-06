@@ -11,7 +11,7 @@ class Gallery extends Component {
       photos: [],
       activePhotos: [],
       apiCaller:
-        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=835ca1e84aae13b4f8be99fc3f0213c8&photoset_id=72157668635132158&user_id=157021524%40N06&format=json&nojsoncallback=1&auth_token=72157690738616180-536c70c3266ac106&api_sig=afbfd9da3f8efbb66e25129ad115c305"
+        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=835ca1e84aae13b4f8be99fc3f0213c8&photoset_id=72157668635132158&user_id=157021524%40N06&format=json&nojsoncallback=1"
     };
     this.getActivePhotos = this.getActivePhotos.bind(this);
     this.handleBottomScroll = this.handleBottomScroll.bind(this);
@@ -24,9 +24,11 @@ class Gallery extends Component {
   componentWillUnmount() {
     this.getPhotos();
     window.removeEventListener("scroll", this.handleBottomScroll, false);
+    this.setState({ photos: [], activePhotos: [] });
   }
   getPhotos() {
     axios.get(this.state.apiCaller).then(res => {
+      console.log(res);
       let photos = [...this.state.photos, ...res.data.photoset.photo];
       this.setState({
         photos: photos.splice(10, photos.length),
