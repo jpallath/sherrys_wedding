@@ -9,13 +9,14 @@ class Gallery extends Component {
     super(props);
     this.state = {
       photos: [],
-      activePhotos: [],
+      photoPage: 1,
       apiCaller:
-        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=835ca1e84aae13b4f8be99fc3f0213c8&photoset_id=72157668635132158&user_id=157021524%40N06&format=json&nojsoncallback=1"
+        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=01b03f0b97eada5bd3dbb1a108833e86&photoset_id=72157668635132158&user_id=157021524%40N06&per_page=10&page=1&format=json&nojsoncallback=1"
     };
     this.getActivePhotos = this.getActivePhotos.bind(this);
     this.handleBottomScroll = this.handleBottomScroll.bind(this);
     this.isScrolledIntoView = this.isScrolledIntoView.bind(this);
+    this.changeApiLink = this.changeApiLink.bind(this);
   }
   componentDidMount() {
     this.getPhotos();
@@ -28,23 +29,24 @@ class Gallery extends Component {
   }
   getPhotos() {
     axios.get(this.state.apiCaller).then(res => {
-      console.log(res);
       let photos = [...this.state.photos, ...res.data.photoset.photo];
       this.setState({
-        photos: photos.splice(10, photos.length),
-        activePhotos: photos.slice(0, 10)
+        photos: photos,
+        photoPage: this.state.photoPage + 1
       });
+      this.changeApiLink();
     });
   }
 
   getActivePhotos = () => {
-    let newActivePhotos = this.state.photos.slice(0, 10);
-    // let removedPhotos = this.state.photos.splice(0, 10);
-    let updatedPhotos = this.state.photos.slice(10, this.state.photos.length);
-    this.setState({
-      activePhotos: [...this.state.activePhotos, ...newActivePhotos],
-      photos: [...updatedPhotos]
-    });
+    this.getPhotos();
+  };
+
+  changeApiLink = () => {
+    let apiLink = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=01b03f0b97eada5bd3dbb1a108833e86&photoset_id=72157668635132158&user_id=157021524%40N06&per_page=10&page=${
+      this.state.photoPage
+    }&format=json&nojsoncallback=1`;
+    this.setState({ apiCaller: apiLink });
   };
 
   handleBottomScroll = debounce(() => {
@@ -63,10 +65,8 @@ class Gallery extends Component {
   }
 
   render() {
-    let { activePhotos } = this.state;
-    let photoSet = activePhotos.map(photo => (
-      <PhotoItem {...photo} key={photo.id} />
-    ));
+    let { photos } = this.state;
+    let photoSet = photos.map(photo => <PhotoItem {...photo} key={photo.id} />);
     return (
       <div className="gallery" id="scroller">
         <div className="photoset">{photoSet}</div>

@@ -18,11 +18,21 @@ img.photo-item {
 .fa-venus-mars {
   position: relative;
   left: 90%;
+  /* animation: biggun 3s infinite; */
 }
 
 @keyframes gallery-trans {
   100% {
     opacity: 1;
     transform: translateY(-50vh);
+  }
+}
+
+@keyframes biggun {
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
