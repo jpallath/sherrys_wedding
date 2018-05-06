@@ -21,6 +21,10 @@ class Gallery extends Component {
     this.getPhotos();
     window.addEventListener("scroll", this.handleBottomScroll, false);
   }
+  componentWillUnmount() {
+    this.getPhotos();
+    window.removeEventListener("scroll", this.handleBottomScroll, false);
+  }
   getPhotos() {
     axios.get(this.state.apiCaller).then(res => {
       let photos = [...this.state.photos, ...res.data.photoset.photo];
