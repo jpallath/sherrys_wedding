@@ -11,7 +11,7 @@ class Gallery extends Component {
       photos: [],
       activePhotos: [],
       apiCaller:
-        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=2ec1ee04d803c2cfa9bf388963cd3bee&photoset_id=72157668635132158&user_id=157021524%40N06&format=json&nojsoncallback=1&api_sig=d7c1e6c1fbcc6f0800b55e58bc7d3678"
+        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=835ca1e84aae13b4f8be99fc3f0213c8&photoset_id=72157668635132158&user_id=157021524%40N06&format=json&nojsoncallback=1&auth_token=72157690738616180-536c70c3266ac106&api_sig=afbfd9da3f8efbb66e25129ad115c305"
     };
     this.getActivePhotos = this.getActivePhotos.bind(this);
     this.handleBottomScroll = this.handleBottomScroll.bind(this);
@@ -33,7 +33,7 @@ class Gallery extends Component {
 
   getActivePhotos = () => {
     let newActivePhotos = this.state.photos.slice(0, 10);
-    let removedPhotos = this.state.photos.splice(0, 10);
+    // let removedPhotos = this.state.photos.splice(0, 10);
     let updatedPhotos = this.state.photos.slice(10, this.state.photos.length);
     this.setState({
       activePhotos: [...this.state.activePhotos, ...newActivePhotos],
