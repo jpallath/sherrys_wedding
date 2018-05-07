@@ -43,7 +43,7 @@ class Gallery extends Component {
   };
 
   changeApiLink = () => {
-    let apiLink = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=01b03f0b97eada5bd3dbb1a108833e86&photoset_id=72157668635132158&user_id=157021524%40N06&per_page=10&page=${
+    let apiLink = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=345693c1be002c3602e3e5dbd54e78db&photoset_id=72157668635132158&user_id=157021524%40N06&per_page=10&page=${
       this.state.photoPage
     }&format=json&nojsoncallback=1`;
     this.setState({ apiCaller: apiLink });
