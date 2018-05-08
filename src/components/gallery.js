@@ -10,7 +10,8 @@ class Gallery extends Component {
     this.state = {
       photos: [],
       photoPage: 1,
-      apiCaller: `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=345693c1be002c3602e3e5dbd54e78db&photoset_id=72157690817854680&user_id=157021524%40N06&per_page=10&page=1&format=json&nojsoncallback=1`
+      apiCaller:
+        "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=345693c1be002c3602e3e5dbd54e78db&photoset_id=72157690817854680&user_id=157021524%40N06&per_page=10&page=1&format=json&nojsoncallback=1"
     };
     this.getActivePhotos = this.getActivePhotos.bind(this);
     this.handleBottomScroll = this.handleBottomScroll.bind(this);
