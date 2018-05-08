@@ -6,10 +6,13 @@ body {
 
 h1 {
   font-family: "Lovers Quarrel";
+  font-size: 100px;
 }
 
 .hashtag {
   font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-style: italic;
 }
 
 /* Navigation */
@@ -60,7 +63,7 @@ nav.hi {
 
 .hi li a,
 .bye li a {
-  color: gold;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   transition: all 0.5s ease;
@@ -123,6 +126,9 @@ nav.bye {
   .upscroll.jumbotron {
     width: 60vw;
     padding: 0 20vw;
+  }
+  h1 {
+    font-size: 60px;
   }
   .hi li,
   .bye li {

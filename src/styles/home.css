@@ -22,6 +22,8 @@ body {
 
 .details-greeter p {
   width: 80%;
+  font-size: 30px;
+  line-height: 32px;
 }
 
 .parallax {
@@ -44,14 +46,13 @@ body {
   background-image: url("../images/engagement.jpg");
 }
 .home-text {
-  height: 50vh;
+  /* height: 50vh; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  font-size: 30px;
 }
 
 .home-text p {
@@ -97,5 +98,9 @@ body {
     font-size: 50%;
     line-height: 15px;
     padding: 12% 0;
+  }
+  .details-greeter p {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
