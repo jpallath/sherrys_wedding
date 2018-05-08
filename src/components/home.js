@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="details-greeter">
           <div className="parallax image-one" />
           <div className="home-text">
-            <h1>#Jonesin4Sherry </h1>
+            <h1>Welcome</h1>
             <p>
               Thank you for all your love, support and prayers throughout our
               adventure together from day one. We are thrilled to share the
@@ -17,7 +17,7 @@ class Home extends Component {
             </p>
           </div>
           <div className="parallax image-two" />
-          <h1>#Jonesin4Sherry</h1>
+          <h1 className="hashtag">#Jonesin4Sherry</h1>
         </div>
       </div>
     );

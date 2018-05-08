@@ -10,8 +10,8 @@ img.photo-item {
   position: relative;
   top: 50vh;
   animation: gallery-trans 3s forwards;
-  width: 40%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
   margin: 1.25%;
 }
 
