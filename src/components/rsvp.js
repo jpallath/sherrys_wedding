@@ -12,7 +12,7 @@ class RSVP extends Component {
           id="mG61Hd"
           className="rsvp-form"
         >
-          <h1>RSVP</h1>
+          <h1 className="rsvp-header">R S V P</h1>
           <p>
             Share in Sherry and Jones' story. Fill this out so we know if you're
             attending!

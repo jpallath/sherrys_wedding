@@ -4,8 +4,6 @@ import Home from "./home";
 import Gallery from "./gallery";
 import BridalParty from "./bridalparty";
 import Festivities from "./festivities";
-import Registry from "./registry";
-import Travel from "./travel";
 import Story from "./addtoourstory";
 import RSVP from "./rsvp";
 import NavBar from "./navbar";
@@ -22,8 +20,6 @@ class App extends Component {
             <Route exact path="/gallery" component={Gallery} />
             <Route exact path="/bridalparty" component={BridalParty} />
             <Route exact path="/festivities" component={Festivities} />
-            <Route exact path="/registry" component={Registry} />
-            <Route exact path="/travel" component={Travel} />
             <Route exact path="/story" component={Story} />
           </div>
         </BrowserRouter>

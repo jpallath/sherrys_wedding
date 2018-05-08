@@ -6,6 +6,10 @@
   background-image: url("../images/rsvp.JPG");
 }
 
+.rsvp-header {
+  color: maroon;
+}
+
 .rsvp-form {
   display: flex;
   align-items: center;
