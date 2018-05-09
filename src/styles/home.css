@@ -45,6 +45,12 @@ body {
 .image-two {
   background-image: url("../images/engagement.png");
 }
+.image-three {
+  background-image: url("../images/storyone.JPG");
+}
+.image-four {
+  background-image: url("../images/storytwo.JPG");
+}
 .home-text {
   /* height: 50vh; */
   text-align: center;
