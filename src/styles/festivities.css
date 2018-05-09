@@ -5,6 +5,8 @@
   justify-content: center;
   color: white;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: mapping 3s forwards;
 }
 
 .festivities h3 {
@@ -37,4 +39,10 @@
 
 .acc a {
   color: white;
+}
+
+@keyframes mapping {
+  100% {
+    opacity: 0.9;
+  }
 }
