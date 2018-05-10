@@ -54,11 +54,12 @@ body {
 .home-text {
   /* height: 50vh; */
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
+  padding-bottom: 5%;
+  line-height: 15px;
+}
+
+.home-text h1 {
+  margin-left: 0;
 }
 
 .home-text p {
