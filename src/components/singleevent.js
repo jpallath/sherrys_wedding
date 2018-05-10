@@ -17,7 +17,9 @@ class SingleEvent extends Component {
       address2,
       venue,
       Lon,
-      Lat
+      Lat,
+      extra,
+      link
     } = this.props.activeEvent;
     return (
       <div className="single-event">
@@ -32,6 +34,11 @@ class SingleEvent extends Component {
             <h2>{address0}</h2>
             <h3>{address1}</h3>
             <h3>{address2}</h3>
+            {extra ? (
+              <p>
+                {extra} <a href={link}>which you can find here</a>
+              </p>
+            ) : null}
           </div>
           <div className="images">
             {/* {venue ? <img src={venue} alt="something" /> : null} */}

@@ -34,7 +34,11 @@ class Festivities extends Component {
           venue:
             "https://images.elitemeetings.com/000317/fort-lauderdale-marriott-coral-springs-hotel-golf-club-and-convention-center_meetings_a.jpg",
           Lon: -80.2851098,
-          Lat: 26.3097357
+          Lat: 26.3097357,
+          extra:
+            "For your convenience, a preferred rate is available the weekend of  10/05/2018 – 10/07/2018, ",
+          link:
+            "http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Jones%20and%20Painumkal%20Wedding%20Room%20Block%5Efllmc%60jswjswa%60122%60USD%60false%604%6010/5/18%6010/7/18%609/5/18&app=resvlink&stop_mobi=yes"
         }
       ]
     };
