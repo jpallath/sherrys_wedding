@@ -57,12 +57,12 @@
 .details {
   width: 71.5%;
   border: 1px solid black;
-  height: 110vh;
+  height: 100%;
   background-color: maroon;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .ceremony-container {
   height: 50vh;
@@ -96,6 +96,9 @@ a {
   .mapped {
     width: 600px;
     height: 300px;
+  }
+  .images {
+    margin-top: 25%;
   }
 }
 
