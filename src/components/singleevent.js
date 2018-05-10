@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Map from "./mapcomponent";
 
 class SingleEvent extends Component {
+  componentDidUpdate() {
+    console.log(this.props.activeEvent.Lon);
+    console.log(this.refs.mapped);
+  }
   render() {
     let {
       situation,
