@@ -63,7 +63,7 @@ nav.hi {
 
 .hi li a,
 .bye li a {
-  color: white;
+  color: #69140e;
   font-weight: bold;
   text-decoration: none;
   transition: all 0.5s ease;
@@ -71,7 +71,7 @@ nav.hi {
 
 .hi li a:hover,
 .bye li a:hover {
-  color: maroon;
+  color: #6c0e23;
   text-decoration: underline;
 }
 

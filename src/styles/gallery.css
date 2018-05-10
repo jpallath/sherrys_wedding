@@ -1,7 +1,7 @@
 .photoset {
   display: flex;
   flex-wrap: wrap;
-  background: maroon;
+  background: #6c0e23;
   align-items: center;
   justify-content: center;
 }
