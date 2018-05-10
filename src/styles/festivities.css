@@ -18,6 +18,7 @@
   padding: 0;
   opacity: 0;
   animation: fadein 3s forwards;
+  z-index: 100;
 }
 
 .event-container li {
@@ -31,7 +32,6 @@
   border-bottom: solid #282828 5px;
   transition: all 0.5s ease-in;
   font-family: "Raleway";
-  z-index: 100;
 }
 
 .event-container li:first-child {
@@ -52,6 +52,7 @@
   flex-wrap: wrap;
   opacity: 0;
   animation: fadein 3s forwards;
+  z-index: 99;
 }
 .calendar-container {
   width: 28%;
