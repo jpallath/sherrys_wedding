@@ -28,9 +28,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid #282828 2px;
+  border-bottom: solid #282828 5px;
   transition: all 0.5s ease-in;
   font-family: "Raleway";
+  z-index: 100;
+}
+
+.event-container li:first-child {
+  border-top: solid #282828 5px;
 }
 
 .event-container li:hover {
