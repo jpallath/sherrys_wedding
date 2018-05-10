@@ -45,6 +45,8 @@
   height: 110vh;
   display: flex;
   flex-wrap: wrap;
+  opacity: 0;
+  animation: fadein 3s forwards;
 }
 .calendar-container {
   width: 28%;

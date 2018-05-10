@@ -7,7 +7,19 @@ class Festivities extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeEvent: {},
+      activeEvent: {
+        id: 0,
+        situation: "Ceremony",
+        time: "3:00PM",
+        day: "Saturday",
+        date: "October 6, 2018",
+        address0: "Our Lady of Health",
+        address1: "201 North University Drive",
+        address2: "Coral Springs, FL 33071",
+        venue: "http://syromalabarflorida.org/img/banner2.jpg",
+        Lon: -80.252761,
+        Lat: 26.233565
+      },
       events: [
         {
           id: 0,
