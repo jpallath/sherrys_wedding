@@ -31,7 +31,7 @@
 }
 
 .event-container li:hover {
-  background: rgb(220, 20, 60);
+  background: rgba(210, 80, 0, 1);
   cursor: pointer;
 }
 
@@ -111,8 +111,10 @@ a {
     bottom: 0;
   }
   .event-container li {
-    height: 100%;
+    height: 92%;
     width: 48%;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
   }
   .calendar-container,
   .details {
