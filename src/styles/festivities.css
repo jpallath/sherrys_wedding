@@ -92,6 +92,13 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 1500px) {
+  .mapped {
+    width: 600px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   ul.event-container {
     position: absolute;
