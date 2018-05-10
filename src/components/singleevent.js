@@ -30,18 +30,17 @@ class SingleEvent extends Component {
         </div>
         <div className="details">
           <div className="ceremony-container">
-            <h1>{situation}</h1>
-            <h2>{address0}</h2>
-            <h3>{address1}</h3>
-            <h3>{address2}</h3>
-            {extra ? (
-              <p>
-                {extra} <a href={link}>which you can find here</a>
-              </p>
-            ) : null}
-          </div>
-          <div className="images">
-            {/* {venue ? <img src={venue} alt="something" /> : null} */}
+            <div className="ceremony-words">
+              <h1>{situation}</h1>
+              <h2>{address0}</h2>
+              <h3>{address1}</h3>
+              <h3>{address2}</h3>
+              {extra ? (
+                <p>
+                  {extra} <a href={link}>which you can find here</a>
+                </p>
+              ) : null}
+            </div>
             {isNaN(Lon) && isNaN(Lat) ? null : (
               <Map ref="mapped" lon={Lon} lat={Lat} />
             )}

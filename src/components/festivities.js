@@ -34,6 +34,20 @@ class Festivities extends Component {
           venue:
             "https://images.elitemeetings.com/000317/fort-lauderdale-marriott-coral-springs-hotel-golf-club-and-convention-center_meetings_a.jpg",
           Lon: -80.2851098,
+          Lat: 26.3097357
+        },
+        {
+          id: 3,
+          situation: "Hotel Reservations",
+          time: "",
+          day: "Saturday",
+          date: "October 5, 2018 - October 7, 2018",
+          address0: "Ft. Lauderdale Marriott Coral Springs",
+          address1: "11775 Heron Bay Boulevard",
+          address2: "Coral Springs, FL 33076",
+          venue:
+            "https://images.elitemeetings.com/000317/fort-lauderdale-marriott-coral-springs-hotel-golf-club-and-convention-center_meetings_a.jpg",
+          Lon: -80.2851098,
           Lat: 26.3097357,
           extra:
             "For your convenience, a preferred rate is available the weekend of  10/05/2018 – 10/07/2018, ",
