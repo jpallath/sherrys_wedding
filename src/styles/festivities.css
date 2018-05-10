@@ -103,6 +103,10 @@ a {
   padding: 4%;
 }
 
+.ceremony-words h1 {
+  font-size: 60px;
+}
+
 .ceremony-words p {
   line-height: 15px;
 }
