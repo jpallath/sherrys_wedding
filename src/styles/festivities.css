@@ -172,6 +172,9 @@ a {
     text-align: center;
     font-size: 12px;
   }
+  .ceremony-words {
+    line-height: 18px;
+  }
 }
 
 @keyframes fadein {
