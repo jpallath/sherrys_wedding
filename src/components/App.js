@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Home from "./home";
-import Gallery from "./gallery";
-import BridalParty from "./bridalparty";
-import Festivities from "./festivities";
-import Story from "./addtoourstory";
-import RSVP from "./rsvp";
-import NavBar from "./navbar";
+import Home from "../containers/home";
+import Gallery from "../containers/gallery";
+import BridalParty from "../containers/bridalparty";
+import Festivities from "../containers/festivities";
+import Story from "../containers/addtoourstory";
+import RSVP from "../containers/rsvp";
+import NavBar from "../containers/navbar";
 
 class App extends Component {
   render() {

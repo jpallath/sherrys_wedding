@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/home.css";
+import Countdown from "../components/countdown";
 
 class Home extends Component {
   render() {
@@ -15,6 +16,7 @@ class Home extends Component {
               details of our coming wedding with you. Please check back
               frequently for updates regarding our destination wedding!
             </p>
+            <Countdown />
           </div>
           <div className="parallax image-two" />
           <h1 className="hashtag">#Jonesin4Sherry</h1>

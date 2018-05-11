@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/festivities.css";
-import EventContainer from "./eventcontainer";
-import SingleEvent from "./singleevent";
+import EventContainer from "../components/eventcontainer";
+import SingleEvent from "../components/singleevent";
 
 class Festivities extends Component {
   constructor(props) {

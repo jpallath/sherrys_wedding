@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { debounce } from "lodash";
-import PhotoItem from "./photoitem";
+import PhotoItem from "../components/photoitem";
 import "../styles/gallery.css";
 
 class Gallery extends Component {
@@ -23,7 +23,6 @@ class Gallery extends Component {
     window.addEventListener("scroll", this.handleBottomScroll, false);
   }
   componentWillUnmount() {
-    this.getPhotos();
     window.removeEventListener("scroll", this.handleBottomScroll, false);
     this.setState({ photos: [], activePhotos: [] });
   }
