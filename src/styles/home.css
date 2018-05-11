@@ -110,7 +110,8 @@ body {
     height: 30vh;
     font-size: 50%;
     line-height: 15px;
-    padding: 12% 0;
+    /* padding: 12% 0; */
+    padding-bottom: 40%;
   }
   .details-greeter p {
     font-size: 20px;
