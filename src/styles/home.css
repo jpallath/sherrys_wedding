@@ -66,6 +66,11 @@ body {
   margin: 0 auto;
 }
 
+.home .timer {
+  margin-top: 3%;
+  font-size: 30px;
+}
+
 @keyframes grayed {
   0% {
   }

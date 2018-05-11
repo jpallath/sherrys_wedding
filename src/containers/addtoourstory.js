@@ -5,7 +5,7 @@ import Countdown from "../components/countdown";
 class AddtoOurStory extends Component {
   render() {
     return (
-      <div className="home">
+      <div className="story home">
         <div className="details-greeter">
           <div className="parallax image-three" />
           <div className="home-text">

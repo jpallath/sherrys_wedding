@@ -28,7 +28,7 @@ class Countdown extends Component {
 
   timer = () => {
     let value = this.state.leftover - 1000;
-    let conversion = this.convert(value);
+    this.convert(value);
     this.setState({ leftover: value });
   };
 
@@ -52,7 +52,7 @@ class Countdown extends Component {
   render() {
     let { days, hours, minutes, seconds } = this.state;
     return (
-      <div>
+      <div className="timer">
         {days} Days {hours} Hours {minutes} Minutes {seconds} Seconds
       </div>
     );

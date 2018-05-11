@@ -15,7 +15,7 @@ class SingleEvent extends Component {
       address0,
       address1,
       address2,
-      venue,
+      // venue,
       Lon,
       Lat,
       extra,
