@@ -66,6 +66,10 @@
   color: white;
   font-size: 20px;
 }
+.calendar-container h4 {
+  font-size: 18px;
+  text-align: center;
+}
 .details {
   width: 71.5%;
   border: 1px solid #282828;
@@ -112,7 +116,7 @@ a {
 }
 
 .ceremony-words h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .ceremony-words p {
