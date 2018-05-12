@@ -1,14 +1,12 @@
 .rsvp {
   height: 150vh;
-  background: #6c0e23;
-}
+  background: #6c0e23; }
+
 .image-rsvp {
-  background-image: url("../images/rsvp.JPG");
-}
+  background-image: url("../images/rsvp.JPG"); }
 
 .rsvp-header {
-  color: #6c0e23;
-}
+  color: #6c0e23; }
 
 .rsvp-form {
   display: flex;
@@ -19,19 +17,16 @@
   background: #000000;
   color: white;
   padding: 5%;
-  font-family: "Raleway", sans-serif;
-}
+  font-family: "Raleway", sans-serif; }
 
 .rsvp-form p {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .sibling {
   margin-top: 5px;
-  transition: all 0.5s ease-in;
-}
+  transition: all 0.5s ease-in; }
 
 form input {
   background: #000000;
@@ -40,8 +35,7 @@ form input {
   text-align: center;
   border-bottom-color: white;
   transition: all 0.5s ease-in;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 input[type="submit"] {
   background: #000000;
@@ -51,26 +45,21 @@ input[type="submit"] {
   border-color: white;
   font-weight: bolder;
   font-size: 1em;
-  font-family: "Kaushan Script", cursive;
-}
+  font-family: "Kaushan Script", cursive; }
 
 input[type="text"]:focus {
   outline: none;
   border-bottom-color: #6c0e23;
-  transition: all 0.5s ease-in;
-}
+  transition: all 0.5s ease-in; }
 
 input[type="text"]:focus + .sibling {
-  color: #6c0e23;
-}
+  color: #6c0e23; }
 
 input[type="text"]:active {
   outline: none;
   border-bottom-color: #6c0e23;
-  transition: all 0.5s ease-in;
-}
+  transition: all 0.5s ease-in; }
+
 @media screen and (max-width: 414px) {
   .image-rsvp {
-    background-position: 28%;
-  }
-}
+    background-position: 28%; } }

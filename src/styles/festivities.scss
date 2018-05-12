@@ -1,12 +1,14 @@
+@import "colors.scss";
 .festivities {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .event-container {
   width: 20%;
-  background-color: #6c0e23;
+  background-color: $prime;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,64 +19,68 @@
   padding: 0;
   opacity: 0;
   animation: fadein 3s forwards;
-  z-index: 100; }
+  z-index: 100;
+}
 
 .event-container li {
-  background: #6c0e23;
+  background: $prime;
   width: 100%;
   height: 10%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid #282828 5px;
+  border-bottom: solid $borders 5px;
   transition: all 0.5s ease-in;
-  font-family: "Raleway"; }
+  font-family: "Raleway";
+}
 
 .event-container li:first-child {
-  border-top: solid #282828 5px; }
+  border-top: solid $borders 5px;
+}
 
 .event-container li:hover {
-  background: #282828;
-  cursor: pointer; }
+  background: $box-hover;
+  cursor: pointer;
+}
 
 .single-event {
-  color: white;
+  color: $text-color;
   width: 80%;
-  background-color: #282828;
+  background-color: $borders;
   height: 110vh;
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
   animation: fadein 3s forwards;
-  z-index: 99; }
-
+  z-index: 99;
+}
 .calendar-container {
   width: 28%;
-  border: 1px solid #282828;
-  background-color: #6c0e23;
+  border: 1px solid $borders;
+  background-color: $prime;
   height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 20px; }
-
+  color: $text-color;
+  font-size: 20px;
+}
 .calendar-container h4 {
   font-size: 18px;
-  text-align: center; }
-
+  text-align: center;
+}
 .details {
   width: 71.5%;
-  border: 1px solid #282828;
+  border: 1px solid $borders;
   height: 100%;
-  background-color: #6c0e23;
+  background-color: $prime;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
-
+  justify-content: space-between;
+}
 .ceremony-container {
   height: 100vh;
   display: flex;
@@ -82,43 +88,51 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 5vh; }
-
+  top: 5vh;
+}
 .images {
   height: 50vh;
-  background: #6c0e23;
+  background: $prime;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%; }
-
+  margin-top: 5%;
+}
 .images img {
-  width: 10%; }
+  width: 10%;
+}
 
 .mapped {
   width: 800px;
-  height: 400px; }
+  height: 400px;
+}
 
 a {
-  color: white; }
-
+  color: $text-color;
+}
 .ceremony-words {
   text-align: center;
   line-height: 12px;
-  padding: 4%; }
+  padding: 4%;
+}
 
 .ceremony-words h1 {
-  font-size: 40px; }
+  font-size: 40px;
+}
 
 .ceremony-words p {
-  line-height: 15px; }
+  line-height: 15px;
+}
 
 @media screen and (max-width: 1500px) {
   .mapped {
     width: 600px;
-    height: 300px; }
+    height: 300px;
+  }
   .images {
-    margin-top: 25%; } }
+    margin-top: 25%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   ul.event-container {
@@ -126,49 +140,66 @@ a {
     flex-direction: row;
     width: 100%;
     height: 15%;
-    bottom: 0; }
+    bottom: 0;
+  }
   .event-container li {
     height: 92%;
     width: 48%;
-    border-top: solid 5px #282828;
-    border-bottom: solid 5px #282828; }
+    border-top: solid 5px $borders;
+    border-bottom: solid 5px $borders;
+  }
   .calendar-container,
   .details {
     height: 85vh;
-    border: none; }
+    border: none;
+  }
   .single-event {
     width: 100%;
     height: 85vh;
     top: 0;
-    position: absolute; }
+    position: absolute;
+  }
   .mapped {
     width: 600px;
-    height: 300px; }
+    height: 300px;
+  }
   .calendar-container {
-    font-size: 12px; } }
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .mapped {
     width: 400px;
-    height: 200px; } }
+    height: 200px;
+  }
+}
 
 @media screen and (max-width: 450px) {
   .mapped {
     width: 200px;
-    height: 100px; }
+    height: 100px;
+  }
   .ceremony-container {
     height: 80vh;
     font-size: 12px;
-    text-align: center; }
+    text-align: center;
+  }
   .ceremony-words h1 {
-    font-size: 20px; }
+    font-size: 20px;
+  }
   .calendar-container,
   .details {
     text-align: center;
-    font-size: 12px; }
+    font-size: 12px;
+  }
   .ceremony-words {
-    line-height: 18px; } }
+    line-height: 18px;
+  }
+}
 
 @keyframes fadein {
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}

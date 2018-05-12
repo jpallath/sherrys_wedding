@@ -1,10 +1,11 @@
+@import "colors.scss";
 .photoset {
   display: flex;
   flex-wrap: wrap;
-  background: #6c0e23;
+  background: $prime;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center;
+}
 img.photo-item {
   opacity: 0;
   position: relative;
@@ -12,25 +13,34 @@ img.photo-item {
   animation: gallery-trans 3s forwards;
   width: 20%;
   height: 20%;
-  margin: 1.25%; }
+  margin: 1.25%;
+}
 
 .fa-venus-mars {
   position: relative;
   left: 90%;
-  /* animation: biggun 3s infinite; */ }
+  /* animation: biggun 3s infinite; */
+}
 
 @keyframes gallery-trans {
   100% {
     opacity: 1;
-    transform: translateY(-50vh); } }
+    transform: translateY(-50vh);
+  }
+}
 
 @keyframes biggun {
   50% {
-    transform: scale(1.5); }
+    transform: scale(1.5);
+  }
   100% {
-    transform: scaleX(1); } }
+    transform: scaleX(1);
+  }
+}
 
 @media screen and (max-width: 450px) {
   img.photo-item {
     width: 40%;
-    height: 40%; } }
+    height: 40%;
+  }
+}

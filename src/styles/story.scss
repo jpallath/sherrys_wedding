@@ -1,31 +1,39 @@
+@import "colors.scss";
 .story {
   position: absolute;
   top: 50px;
-  padding: 3%; }
+  padding: 3%;
+}
 
 .story h1,
 hashtag-story h1 {
   font-size: 60px;
-  color: white; }
+  color: $text-color;
+}
 
 .story p,
 hashtag-story p {
   display: block;
   width: 60%;
-  background: #000000;
-  color: white;
+  background: $rsvp-background;
+  color: $text-color;
   font-family: "Raleway";
-  margin: 0; }
+  margin: 0;
+}
 
 img {
-  width: 25%; }
+  width: 25%;
+}
 
 .image-one {
-  float: right; }
+  float: right;
+}
 
 .image-two {
-  float: left; }
+  float: left;
+}
 
 .story .timer {
-  color: white;
-  font-size: 40px; }
+  color: $text-color;
+  font-size: 40px;
+}
