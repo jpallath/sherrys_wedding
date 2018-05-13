@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../styles/story.css";
-import Countdown from "../components/countdown";
 import storyOne from "../images/storyone.JPG";
 
 class AddtoOurStory extends Component {
@@ -24,8 +23,8 @@ class AddtoOurStory extends Component {
               Jersey. <span>Sherry</span> made the 2 hour drive from
               Philadelphia to meet her [potential] fiancé. That first car trip
               back to Philadelphia was the first time for both to really get to
-              know each other face to face (or well, side of the face to side of
-              the face)…and subtly check the other one out, too.
+              know each other, staring out the window on the ride back while
+              subtlety checking each other out
             </p>
 
             <p>
