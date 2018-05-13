@@ -60,7 +60,7 @@
   .story {
     padding-top: 10%; }
   .story.container {
-    height: 100vh; }
+    height: 800px; }
   .container.story {
     flex-direction: column;
     flex-wrap: nowrap; }
