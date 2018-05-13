@@ -16,8 +16,8 @@ class AddtoOurStory extends Component {
             <p>
               <span> May, 01, 2017 </span> marks the moment when the first text
               was sent. When things feel right, texting evolves into SnapChats,
-              which then turns phone calls, and then into video chats, until
-              ultimately seeing each other face to face, no barriers.
+              which then turns into phone calls, and then into video chats,
+              until ultimately seeing each other face to face, no barriers.
             </p>
             <p>
               <span> Jones </span> finally took a flight out to Newark, New
