@@ -28,6 +28,7 @@ class AddtoOurStory extends Component {
             lives together.
           </p>
         </div>
+        <h1 className="hashtag">#Jonesin4Sherry</h1>
       </div>
     );
   }
