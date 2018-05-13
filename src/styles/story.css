@@ -40,9 +40,15 @@
       align-items: center;
       height: 100%;
       font-size: 70px; }
+    .story .container .storytime {
+      width: 28%;
+      text-align: center; }
     .story .container p {
-      width: 30%;
       font-size: 15px; }
+    .story .container p span {
+      font-size: 17px;
+      font-weight: bold;
+      color: wheat; }
   .story img {
     width: 80%;
     border: 5px solid black;

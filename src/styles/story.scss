@@ -47,9 +47,17 @@
       height: 100%;
       font-size: 70px;
     }
+    .storytime {
+      width: 28%;
+      text-align: center;
+    }
     p {
-      width: 30%;
       font-size: 15px;
+    }
+    p span {
+      font-size: 17px;
+      font-weight: bold;
+      color: wheat;
     }
   }
   img {
