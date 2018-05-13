@@ -48,7 +48,7 @@ body {
 .home-text {
   /* height: 50vh; */
   text-align: center;
-  padding-bottom: 16%;
+  padding-bottom: 6%;
   line-height: 15px; }
 
 .home-text h1 {
@@ -76,6 +76,10 @@ body {
   .home-text {
     height: 30vh; } }
 
+@media screen and (max-width: 1023px) {
+  .home-text {
+    padding-bottom: 16%; } }
+
 @media screen and (max-width: 414px) {
   .details-greeter {
     top: 0; }
@@ -93,9 +97,12 @@ body {
     padding-bottom: 40%; }
   .details-greeter p {
     font-size: 20px;
-    line-height: 22px; } }
+    line-height: 22px; }
+  .home-text {
+    padding-bottom: 40%; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .parallax {
     background-attachment: unset !important;
-    background-position: center top !important; } }
+    background-position: center top !important;
+    height: 55vh; } }

@@ -27,16 +27,17 @@ class AddtoOurStory extends Component {
             lives together.
           </p>
         </div>
-        <div className="container hashtag">
-          <h1>#Jonesing4Sherry</h1>
-          <p>
-            Use the hashtag <span>#Jonesing4Sherry</span> to add and follow
-            additions to our story on Instagram, SnapChat, and other Social
-            Media
-          </p>
-          <img src={storyTwo} alt="second" />
+        <div>
+          <div className="container hashtag">
+            <h1>#Jonesing4Sherry</h1>
+            <p>
+              Use the hashtag <span>#Jonesing4Sherry</span> to add and follow
+              additions to our story on Instagram, SnapChat, and other Social
+              Media
+            </p>
+          </div>
+          <Countdown />
         </div>
-        <Countdown />
       </div>
     );
   }

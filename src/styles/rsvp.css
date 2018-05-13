@@ -6,7 +6,8 @@
   background-image: url("../images/rsvp.JPG"); }
 
 .rsvp-header {
-  color: #6c0e23; }
+  color: #6c0e23;
+  margin: 0px; }
 
 .rsvp-form {
   display: flex;
@@ -16,7 +17,6 @@
   border: #6c0e23 3px solid;
   background: #000000;
   color: white;
-  padding: 5%;
   font-family: "Raleway", sans-serif; }
 
 .rsvp-form p {
@@ -63,3 +63,9 @@ input[type="text"]:active {
 @media screen and (max-width: 414px) {
   .image-rsvp {
     background-position: 28%; } }
+
+@media only screen and (max-device-width: 1024px) and (min-device-width: 320px) {
+  .parallax.image-rsvp {
+    background-attachment: unset !important;
+    background-position: center top !important;
+    height: 45vh; } }

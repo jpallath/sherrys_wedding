@@ -9,6 +9,7 @@
 
 .rsvp-header {
   color: $prime;
+  margin: 0px;
 }
 
 .rsvp-form {
@@ -19,7 +20,6 @@
   border: $prime 3px solid;
   background: $rsvp-background;
   color: $text-color;
-  padding: 5%;
   font-family: "Raleway", sans-serif;
 }
 
@@ -73,5 +73,13 @@ input[type="text"]:active {
 @media screen and (max-width: 414px) {
   .image-rsvp {
     background-position: 28%;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) and (min-device-width: 320px) {
+  .parallax.image-rsvp {
+    background-attachment: unset !important;
+    background-position: center top !important;
+    height: 45vh;
   }
 }

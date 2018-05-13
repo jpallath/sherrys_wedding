@@ -5,6 +5,11 @@
   color: $text-color;
   opacity: 0;
   animation: grow 3s forwards;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   h1 {
     font-size: 40px;
   }
@@ -13,24 +18,47 @@
   }
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10%;
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
     p {
-      width: 75%;
+      width: 45%;
     }
   }
   img {
-    width: 24.1%;
+    width: 30%;
+    margin: 0 5%;
   }
   .timer {
     text-align: center;
   }
 }
 
+.container.hashtag {
+  flex-direction: column;
+}
+
 @media screen and (max-width: 450px) {
   .story {
     padding-top: 10%;
+  }
+  .container.story {
+    flex-direction: column;
+    img {
+      width: 60%;
+    }
+    p {
+      width: 90%;
+      margin: 5%;
+    }
+  }
+  .container.hashtag p {
+    width: 85%;
   }
 }
 

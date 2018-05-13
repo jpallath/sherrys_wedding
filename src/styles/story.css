@@ -2,26 +2,48 @@
   padding-top: 3%;
   color: white;
   opacity: 0;
-  animation: grow 3s forwards; }
+  animation: grow 3s forwards;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
   .story h1 {
     font-size: 40px; }
   .story .hashtag h1 {
     font-family: "Raleway"; }
   .story .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10%; }
+    .story .container h1 {
+      width: 100%;
+      text-align: center; }
     .story .container p {
-      width: 75%; }
+      width: 45%; }
   .story img {
-    width: 24.1%; }
+    width: 30%;
+    margin: 0 5%; }
   .story .timer {
     text-align: center; }
 
+.container.hashtag {
+  flex-direction: column; }
+
 @media screen and (max-width: 450px) {
   .story {
-    padding-top: 10%; } }
+    padding-top: 10%; }
+  .container.story {
+    flex-direction: column; }
+    .container.story img {
+      width: 60%; }
+    .container.story p {
+      width: 90%;
+      margin: 5%; }
+  .container.hashtag p {
+    width: 85%; } }
 
 @keyframes grow {
   100% {
