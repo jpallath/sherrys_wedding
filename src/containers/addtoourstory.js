@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../styles/story.css";
 import Countdown from "../components/countdown";
 import storyOne from "../images/storyone.JPG";
-import storyTwo from "../images/storytwo.JPG";
 
 class AddtoOurStory extends Component {
   render() {
@@ -11,6 +10,7 @@ class AddtoOurStory extends Component {
         <div className="container story">
           <h1>Our Story</h1>
           <img src={storyOne} alt="first" />
+          <div className="distance">2,822 miles</div>
           <p>
             May 01, 2017 marks the date when the couple first started texting.
             Texting lead to calls then video calls (the occasional snapchat)
@@ -29,12 +29,7 @@ class AddtoOurStory extends Component {
         </div>
         <div>
           <div className="container hashtag">
-            <h1>#Jonesing4Sherry</h1>
-            <p>
-              Use the hashtag <span>#Jonesing4Sherry</span> to add and follow
-              additions to our story on Instagram, SnapChat, and other Social
-              Media
-            </p>
+            <h1>#Jonesin4Sherry</h1>
           </div>
           <Countdown />
         </div>

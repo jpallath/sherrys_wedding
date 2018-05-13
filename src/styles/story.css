@@ -21,16 +21,31 @@
     .story .container h1 {
       width: 100%;
       text-align: center; }
+    .story .container .distance {
+      width: 28%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: green;
+      height: 100px;
+      border-left: blue 10px solid;
+      border-right: blue 10px solid;
+      margin: 0 1%; }
     .story .container p {
-      width: 45%; }
+      width: 30%;
+      font-size: 15px; }
   .story img {
-    width: 30%;
-    margin: 0 5%; }
+    width: 28%;
+    border: 5px solid black; }
   .story .timer {
     text-align: center; }
 
 .container.hashtag {
   flex-direction: column; }
+
+@media screen and (max-width: 1024px) {
+  .story .container p {
+    font-size: 12px; } }
 
 @media screen and (max-width: 450px) {
   .story {
@@ -39,6 +54,8 @@
     flex-direction: column; }
     .container.story img {
       width: 60%; }
+    .container.story .distance {
+      margin-top: 5%; }
     .container.story p {
       width: 90%;
       margin: 5%; }
