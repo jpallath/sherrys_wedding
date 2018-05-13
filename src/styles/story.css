@@ -75,7 +75,8 @@ h1.hashtag {
   .story {
     padding-top: 10%; }
     .story .image {
-      width: 100%; }
+      width: 100%;
+      margin: 10% 0; }
   .story.container {
     height: 800px; }
   .container.story {
