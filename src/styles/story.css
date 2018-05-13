@@ -22,21 +22,22 @@
       width: 100%;
       text-align: center; }
     .story .container .distance {
-      width: 28%;
+      width: 20%;
+      display: -ms-flexbox;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: green;
-      height: 100px;
-      border-left: blue 10px solid;
-      border-right: blue 10px solid;
+      height: 60vh;
+      border-left: black 3px solid;
+      border-right: black 3px solid;
       margin: 0 1%; }
     .story .container p {
       width: 30%;
       font-size: 15px; }
   .story img {
     width: 28%;
-    border: 5px solid black; }
+    border: 5px solid black;
+    filter: grayscale(100%); }
   .story .timer {
     text-align: center; }
 
