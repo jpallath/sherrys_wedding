@@ -10,6 +10,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  h1.hashtag {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+  }
   h1 {
     font-size: 40px;
   }
@@ -67,12 +72,6 @@
   .timer {
     text-align: center;
   }
-}
-
-h1.hashtag {
-  position: fixed;
-  bottom: 0;
-  margin: 0;
 }
 
 .container.hashtag {
