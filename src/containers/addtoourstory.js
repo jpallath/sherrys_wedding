@@ -24,7 +24,7 @@ class AddtoOurStory extends Component {
               Philadelphia to meet her [potential] fiancé. That first car trip
               back to Philadelphia was the first time for both to really get to
               know each other, staring out the window on the ride back while
-              subtlety checking each other out
+              subtlety checking each other out.
             </p>
 
             <p>
