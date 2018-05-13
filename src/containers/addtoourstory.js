@@ -7,8 +7,8 @@ class AddtoOurStory extends Component {
   render() {
     return (
       <div className="story">
+        <h1>Our Story</h1>
         <div className="container story">
-          <h1>Our Story</h1>
           <img src={storyOne} alt="first" />
           <div className="distance">2,822 miles</div>
           <p>
@@ -26,12 +26,6 @@ class AddtoOurStory extends Component {
             in love and was ready to lock her down and spend the rest of their
             lives together.
           </p>
-        </div>
-        <div>
-          <div className="container hashtag">
-            <h1>#Jonesin4Sherry</h1>
-          </div>
-          <Countdown />
         </div>
       </div>
     );
