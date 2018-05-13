@@ -7,14 +7,15 @@ class AddtoOurStory extends Component {
   render() {
     return (
       <div className="story">
-        <h1>Our Story</h1>
         <div className="container story">
-          <img src={storyOne} alt="first" />
           <div className="distance">2,822 miles</div>
+          <div className="image">
+            <img src={storyOne} alt="first" />
+          </div>
           <p>
             May 01, 2017 marks the date when the couple first started texting.
             Texting lead to calls then video calls (the occasional snapchat)
-            then finally the connection was strong enough for jones to finally
+            then finally the connection was strong enough for Jones to finally
             take a flight out to Newark, New Jersey. Sherry made the 2 hour trip
             from Philadelphia, Pennsylvania to pick up (not knowing at the time)
             her future fiancé. The 2-hour trip the couple finally talked side
