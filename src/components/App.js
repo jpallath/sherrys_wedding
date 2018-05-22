@@ -11,19 +11,27 @@ import NavBar from "../containers/navbar";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <BrowserRouter>
+      <BrowserRouter>
+        <div className="App">
           <div>
             <NavBar />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/rsvp" component={RSVP} />
-            <Route exact path="/gallery" component={Gallery} />
-            <Route exact path="/bridalparty" component={BridalParty} />
-            <Route exact path="/festivities" component={Festivities} />
-            <Route exact path="/story" component={Story} />
+            <Route exact path="/" render={props => <Home />} />
+            <Route exact path="/rsvp" render={props => <RSVP />} />
+            <Route exact path="/gallery" render={props => <Gallery />} />
+            <Route
+              exact
+              path="/bridalparty"
+              render={props => <BridalParty />}
+            />
+            <Route
+              exact
+              path="/festivities"
+              render={props => <Festivities />}
+            />
+            <Route exact path="/story" render={props => <Story />} />
           </div>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
