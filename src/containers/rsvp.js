@@ -32,13 +32,13 @@ class RSVP extends Component {
           <p>
             <input type="text" name="entry.2037305380" />
             <label className="sibling" htmlFor="entry.2037305380">
-              How many people are you bringing?
+              How many people are you bringing with you?
             </label>
           </p>
           <p>
             <input type="text" name="entry.1155699208" />
             <label className="sibling" htmlFor="entry.1155699208">
-              Comments
+              Music Suggestions for the DJ?
             </label>
           </p>
           <input type="submit" value="See you soon" />

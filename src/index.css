@@ -56,14 +56,15 @@ nav.hi {
 
 .hi li a,
 .bye li a {
-  color: #69140e;
+  color: #ffd700;
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  font-size: 20px; }
 
 .hi li a:hover,
 .bye li a:hover {
-  color: #6c0e23;
+  color: #ffd700;
   text-decoration: underline; }
 
 .inactive.jumbotron {
@@ -114,7 +115,10 @@ nav.bye {
     font-size: 9px;
     margin: 0 0.5%;
     padding: 4% 1%;
-    text-align: center; } }
+    text-align: center; }
+    .hi li a,
+    .bye li a {
+      font-size: 12px; } }
 
 @keyframes shake {
   10%,

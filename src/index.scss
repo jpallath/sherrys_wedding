@@ -1,153 +1,159 @@
 @import "./styles/colors.scss";
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
 }
 
 h1 {
-  font-family: "Meddon", cursive;
-  font-size: 100px;
+    font-family: "Meddon", cursive;
+    font-size: 100px;
 }
 
 h1.hashtag {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  font-style: italic;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-style: italic;
 }
 
 /* Navigation */
 nav {
-  z-index: 1000;
-  background: black;
-  list-style-type: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: "Raleway", sans-serif;
-  position: fixed;
-  width: 100%;
-  height: 50px;
+    z-index: 1000;
+    background: black;
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    position: fixed;
+    width: 100%;
+    height: 50px;
 }
 
 .jumbotron {
-  position: fixed;
-  top: 0.05%;
-  /* padding: 0 25vw;
+    position: fixed;
+    top: 0.05%;
+    /* padding: 0 25vw;
   width: 50vw; */
-  background: black;
-  transition: all ease 1s;
+    background: black;
+    transition: all ease 1s;
 }
 
 nav.hi {
-  opacity: 1;
+    opacity: 1;
 }
 #navbar {
-  position: fixed;
-  background: black;
+    position: fixed;
+    background: black;
 }
 .hi,
 .bye {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hi li,
 .bye li {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 
 .hi li a,
 .bye li a {
-  color: #69140e;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.5s ease;
+    // color: #69140e;
+    color: $nav-prime;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-size: 20px;
 }
 
 .hi li a:hover,
 .bye li a:hover {
-  color: #6c0e23;
-  text-decoration: underline;
+    // color: #6c0e23;
+    color: $nav-prime;
+    text-decoration: underline;
 }
 
 .inactive.jumbotron {
-  z-index: -10;
-  opacity: 0;
+    z-index: -10;
+    opacity: 0;
 }
 
 nav.bye {
-  opacity: 0;
+    opacity: 0;
 }
 
 .active.jumbotron {
-  z-index: 10;
-  opacity: 1;
+    z-index: 10;
+    opacity: 1;
 }
 
 .downscroll.jumbotron {
-  width: 10vw;
-  padding: 0 45vw;
-  animation: shake 2s ease-in;
-  animation-delay: 1s;
-  animation-iteration-count: 2;
+    width: 10vw;
+    padding: 0 45vw;
+    animation: shake 2s ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
 }
 
 .upscroll.jumbotron {
-  width: 20vw;
-  padding: 0 40vw;
+    width: 20vw;
+    padding: 0 40vw;
 }
 
 .default.jumbotron {
-  padding: 0 12.5vw;
-  width: 75vw;
+    padding: 0 12.5vw;
+    width: 75vw;
 }
 
 @media screen and (max-width: 1024px) {
-  .downscroll.jumbotron {
-    width: 30vw;
-    padding: 0 35vw;
-  }
+    .downscroll.jumbotron {
+        width: 30vw;
+        padding: 0 35vw;
+    }
 }
 
 @media screen and (max-width: 414px) {
-  .default.jumbotron {
-    width: 100vw;
-    padding: 18vh 0vw;
-  }
-  .downscroll.jumbotron {
-    width: 50vw;
-    padding: 0 25vw;
-  }
-  .upscroll.jumbotron {
-    width: 60vw;
-    padding: 0 20vw;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  .hi li,
-  .bye li {
-    font-size: 9px;
-    margin: 0 0.5%;
-    padding: 4% 1%;
-    text-align: center;
-  }
+    .default.jumbotron {
+        width: 100vw;
+        padding: 18vh 0vw;
+    }
+    .downscroll.jumbotron {
+        width: 50vw;
+        padding: 0 25vw;
+    }
+    .upscroll.jumbotron {
+        width: 60vw;
+        padding: 0 20vw;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .hi li,
+    .bye li {
+        font-size: 9px;
+        margin: 0 0.5%;
+        padding: 4% 1%;
+        text-align: center;
+        a {
+            font-size: 12px;
+        }
+    }
 }
 
 @keyframes shake {
-  10%,
-  90% {
-    transform: translateY(5vh);
-  }
+    10%,
+    90% {
+        transform: translateY(5vh);
+    }
 
-  40%,
-  60% {
-    transform: translateY(0);
-  }
+    40%,
+    60% {
+        transform: translateY(0);
+    }
 }
